@@ -1,8 +1,9 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
-
+import Main from "./components/Main";
 import narcos from "./assets/narcos.jpg";
+import cards1 from "./assets/cards1.svg";
 
 function App() {
   // je créée des variables menu sous forme de tableau parceque sur mon site ul et li
@@ -22,6 +23,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      <Main />
       {/* je rappelle la variable dans footer  */}
       <Footer menu1={menu1} menu2={menu2} />
     </div>

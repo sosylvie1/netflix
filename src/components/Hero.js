@@ -5,16 +5,7 @@ import logonarcos from "../assets/logonarcos.svg";
 
 function Hero() {
   return (
-    // <div className="banner">
-    //   <div className="banner-content">
-    //     <h1>Narcos</h1>
-    //     <p>Une plongée captivante dans le cartel de Medellín. On a adoré</p>
-    //     <div className="banner-buttons">
-    //       <button>Lecture</button>
-    //       <button>Ma liste</button>
-    //     </div>
-    //   </div>
-    // </div>
+    
     <div className="banner">
       {/* <img className="narcos" src={narcos} alt="narcos" /> */}
 
