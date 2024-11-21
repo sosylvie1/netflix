@@ -1,0 +1,65 @@
+/* .banner { */
+/* background-image: url("../assets/narcos.jpg");
+  background-size: cover;
+  background-position: auto; */
+/* height: 100vh;
+  max-width: 100%;
+  display: flex; */
+/* flex-wrap: wrap; Les enfants de .banner passent à la ligne si nécessaire */
+/* align-items: center;
+  justify-content: left;
+  color: white;
+  padding-top: 200px;
+  background-repeat: no-repeat;
+} */
+
+/* .banner-content {
+  text-align: left;
+  padding-left: 30px;
+  flex: 1 1 300px; /* Rend .banner-content flexible */
+/*} */
+
+.banner {
+  position: relative; /* Conteneur parent pour positionnement relatif */
+  background-image: url("../assets/narcos.jpg");
+  min-width: 1200 px;
+  height: auto;
+}
+
+.narcos {
+  position: absolute;
+  /* z-index: -1;
+  max-width: 100%;
+  left: 0;
+  top: 0; */
+  /* padding-top: 96px; */
+}
+
+.banner-content {
+  position: relative; /* Assure que le texte reste au-dessus */
+  z-index: 1; /* Place le texte au-dessus de l'image */
+  text-align: left; /* Centrer le texte horizontalement */
+  color: white; /* Texte blanc pour contraste */
+  /* background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); Fond semi-transparent derrière le texte */
+  padding: 20px; /* Ajoute de l'espace autour du texte */
+  border-radius: 8px; /* Coins arrondis pour le fond */
+  height: 646px;
+}
+
+.banner-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.banner-buttons button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}

@@ -1,0 +1,52 @@
+/* .banner {
+  background-image: url("../assets/narcos.jpg");
+  background-size: cover;
+  background-position: left;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: white;
+  padding-top: 200px;
+  background-repeat: no-repeat;
+} */
+.banner {
+  background-image: url("../assets/narcos.jpg");
+  background-size: cover;
+  background-position: left;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: white;
+  padding-top: 200px;
+  background-repeat: no-repeat;
+  flex-wrap: wrap; /* Permet au contenu de passer à la ligne si nécessaire */
+}
+h1 {
+  font-size: 32px;
+}
+
+.banner-content {
+  text-align: left;
+  padding-left: 60px;
+}
+
+.banner-buttons button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+}
+
+.banner-buttons button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+.image-container img {
+  max-width: 100%;
+  /* height: auto; garde proportions */
+  height: auto;
+}
