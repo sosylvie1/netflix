@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
-import Main from "./components/Main";
+import Main2 from "./components/Main2";
 import narcos from "./assets/narcos.jpg";
 import cards1 from "./assets/cards1.svg";
 
@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
-      <Main />
+      <Main2 />
       {/* je rappelle la variable dans footer  */}
       <Footer menu1={menu1} menu2={menu2} />
     </div>

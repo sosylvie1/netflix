@@ -10,7 +10,7 @@ footer {
 .icones {
   display: flex;
   gap: 24px; /*espace entre les elements*/
-  padding-top: 12 px;
+  /* padding-top: 12 px; */
 }
 
 .icones img {

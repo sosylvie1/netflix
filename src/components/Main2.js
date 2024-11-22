@@ -1,8 +1,8 @@
-import "../assets/main.css";
+import "../assets/main2.css";
 import cards1 from "../assets/cards1.svg";
 import cards2 from "../assets/cards2.svg";
 
-function Main() {
+function Main2() {
   return (
     <div className="main">
       {/* <h2 className="main-title">{title}</h2> */}
@@ -16,4 +16,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Main2;

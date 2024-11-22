@@ -1,33 +1,31 @@
 /* Conteneur principal */
 .main {
   padding-bottom: 10px;
-  text-align: left;
+  text-align: left; /* Centrer le texte et l'image */
   background-color: #141414;
 }
 
-/* Titre
+/* Titre */
 .main-title {
   font-size: 1rem;
   color: #110606; /* Couleur sombre */
-/* margin-bottom: 10px; */
-/*} */
+  margin-bottom: 10px;
+}
 
 /* Conteneur de l'image  */
 .main-image-container {
   display: flex;
   align-items: left; /* Centre verticalement si nécessaire */
-  width: 100%; /*Prend toute la largeur du conteneur */
-  overflow: hidden;
+  /* width: 100%; Prend toute la largeur du conteneur */
 }
 
 .main-image {
-  max-width: 100%;
+  max-width: 100%; /* L'image ne dépasse pas  taille écran */
   height: auto; /* Conserve  proportions */
 }
 
 .main-image2 {
   max-width: 100%;
   height: auto;
-
   padding-top: 65px;
 }
