@@ -5,7 +5,7 @@ import cards2 from "../assets/cards2.svg";
 function Main2() {
   return (
     <div className="main">
-      {/* <h2 className="main-title">{title}</h2> */}
+      {/* {<h2 className="main-title">{title}</h2> } */}
       <div className="main-image-container">
         <img className="main-image" src={cards1} alt="carteimage" />
       </div>
@@ -13,6 +13,16 @@ function Main2() {
         <img className="main-image2" src={cards2} alt="carteimage" />
       </div>
     </div>
+
+    //     <div className="discovery">
+    // <div className="polonais">
+
+    // </div>
+    // <div className="filmlist">
+
+    // </div>
+
+    //     </div>
   );
 }
 

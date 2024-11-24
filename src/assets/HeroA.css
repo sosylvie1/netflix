@@ -1,0 +1,189 @@
+/* parent */
+
+.hero {
+  position: relative; /*parent*/
+  width: 100%;
+  height: 646px;
+  overflow: hidden;
+  color: white;
+  padding-top: 50px; /* Décale le contenu vers le bas */
+  overflow: hidden;
+}
+
+/* image */
+.hero-back {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute; /*enfant*/
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* texte */
+.hero-content {
+  position: relative;
+  z-index: 2; /* Pour que le contenu soit au-dessus de l'image */
+  /* padding: 150px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-width: 600px; /* Largeur maximale du contenu */
+  font-family: "Roboto", sans-serif;
+  margin-top: -200px; /*pour faire monter le contenu texte par rapport a image */
+  padding-left: 50px;
+}
+
+/* texte haut */
+.hero-top {
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-original {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.hero-titre {
+  font-size: 7em;
+  font-weight: bold;
+  margin: 10px 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* texte en sous titre*/
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* texte descriptif */
+.hero-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: white;
+  width: 439px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px; /* Espace  */
+}
+
+.hero-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.play-btn {
+  background: transparent; /* Fond transparent */
+  color: white; /* Texte en blanc */
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transition douce */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre subtile par défaut */
+}
+
+.play-btn:hover {
+  background-color: #d1d1d1;
+}
+
+.list-btn {
+  background: transparent; /* Fond transparent */
+  color: white; /* Texte en blanc */
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transition douce */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre subtile par défaut */
+}
+
+.list-btn:hover {
+  background-color: white;
+  color: black;
+}
+/* Responsive : pour les tablettes et écrans moyens (768px à 1024px) */
+/* POUR REGARDER SUR MOBILE ET TABLETTES */
+@media screen and (max-width: 1024px) {
+  .hero-content {
+    left: 5%; /* Réduit la marge sur le côté */
+    max-width: 400px; /* Réduit la largeur maximale du texte */
+  }
+
+  .hero-title {
+    font-size: 3rem; /* Réduit la taille du titre */
+  }
+
+  .hero-subtitle {
+    font-size: 1rem; /* Ajuste la taille du sous-titre */
+  }
+
+  .hero-description {
+    font-size: 0.9rem; /* Réduit un peu la description */
+  }
+
+  .hero-buttons button {
+    padding: 8px 16px; /* Réduit légèrement les boutons */
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive : pour les smartphones (480px à 768px) */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    top: 45%; /* Ajuste la position verticale */
+    left: 5%;
+    max-width: 300px; /* Réduit encore la largeur du texte */
+    text-align: left; /* Texte aligné à gauche */
+  }
+
+  .hero-title {
+    font-size: 2.5rem; /* Réduit encore le titre */
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem; /* Sous-titre plus petit */
+  }
+
+  .hero-description {
+    font-size: 0.8rem; /* Description encore plus compacte */
+  }
+
+  .hero-buttons button {
+    padding: 6px 12px; /* Boutons plus petits */
+    font-size: 0.8rem;
+  }
+}
+
+/* Responsive : pour les petits smartphones (moins de 480px) */
+@media screen and (max-width: 480px) {
+  .hero-content {
+    top: 40%; /* Descend un peu le contenu */
+    left: 5%;
+    max-width: 280px;
+  }
+
+  .hero-title {
+    font-size: 2rem; /* Taille du titre réduite */
+  }
+
+  .hero-subtitle {
+    font-size: 0.8rem; /* Sous-titre compact */
+  }
+
+  .hero-description {
+    font-size: 0.7rem; /* Texte compact pour petits écrans */
+  }
+
+  .hero-buttons button {
+    padding: 5px 10px; /* Boutons encore plus petits */
+    font-size: 0.7rem;
+  }
+}

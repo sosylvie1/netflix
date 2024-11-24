@@ -1,6 +1,12 @@
+body {
+  margin: 0;
+  font-size: 10px;
+  background-color: #141414;
+}
+
 /* Conteneur principal */
 .main {
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   text-align: left; /* Centrer le texte et l'image */
   background-color: #141414;
 }
