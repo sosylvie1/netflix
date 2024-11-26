@@ -1,39 +1,25 @@
 /* parent */
 
 .hero {
-  position: relative; /*parent*/
-  width: 100%;
-  height: 646px;
-  overflow: hidden;
-  color: white;
-  padding-top: 50px; /* Décale le contenu vers le bas */
-  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
 /* image */
 .hero-back {
+  position: absolute;
   width: 100%;
-  height: 100%;
   object-fit: cover;
-  position: absolute; /*enfant*/
-  top: 0;
-  left: 0;
-  z-index: 1;
+  height: 100vh;
+  z-index: -1;
 }
 
 /* texte */
 .hero-content {
-  position: relative;
-  z-index: 2; /* Pour que le contenu soit au-dessus de l'image */
-  /* padding: 150px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  max-width: 600px; /* Largeur maximale du contenu */
-  font-family: "Roboto", sans-serif;
-  margin-top: -200px; /*pour faire monter le contenu texte par rapport a image */
-  padding-left: 50px;
+  padding-left: 60px;
 }
 
 /* texte haut */
@@ -43,17 +29,18 @@
 }
 
 .hero-original {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: 2px;
   color: white;
 }
 
 .hero-titre {
-  font-size: 7em;
+  font-size: 5em;
   font-weight: bold;
   margin: 10px 0;
   font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 /* texte en sous titre*/
@@ -61,6 +48,7 @@
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 10px;
+  color: white;
 }
 
 /* texte descriptif */

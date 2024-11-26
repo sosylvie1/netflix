@@ -1,37 +1,163 @@
 body {
   margin: 0;
-  font-size: 10px;
+  /* font-size: 10px; */
   background-color: #141414;
 }
+/* Images row 1 et row 2 */
 
-/* Conteneur principal */
+/* Conteneur principal images row1 et row2 */
 .main {
   /* padding-bottom: 10px; */
   text-align: left; /* Centrer le texte et l'image */
   background-color: #141414;
+  padding-left: 60px;
 }
 
 /* Titre */
 .main-title {
   font-size: 1rem;
-  color: #110606; /* Couleur sombre */
+  color: white; /* Couleur sombre */
   margin-bottom: 10px;
 }
 
-/* Conteneur de l'image  */
-.main-image-container {
+/* Conteneur des images  */
+.images-row1 {
   display: flex;
-  align-items: left; /* Centre verticalement si nécessaire */
-  /* width: 100%; Prend toute la largeur du conteneur */
+  justify-content: space-between;
+  /* gap: 3px; Espace  images */
+  overflow-x: scroll;
+  padding-bottom: 10px; /* Optionnel : espace sous la ligne d'images */
+  /* max-width: 100%; */
 }
 
-.main-image {
-  max-width: 100%; /* L'image ne dépasse pas  taille écran */
-  height: auto; /* Conserve  proportions */
+.images-row1::-webkit-scrollbar {
+  display: none; /* Cache la barre de défilement */
 }
-
+/* image */
 .main-image2 {
   max-width: 100%;
   height: auto;
   padding-top: 65px;
+}
+
+/* section poland */
+
+/* conteneur principal poland */
+.poland {
+  width: 100%;
+  height: 658 px;
+  color: white;
+  /* padding-top: 150px; Décale le contenu vers le bas */
+  overflow: hidden;
+  /* display: flex;
+  justify-content: center;*/
+  margin: 0 auto;
+}
+
+.bg {
+  width: 462px;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+image .poland-back {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* CONTAINER BOUTON */
+
+.poland-top {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+.close-button {
+  /* margin-top: -100px; */
+  font-size: 1.5rem;
+  background: none;
+  color: rgb(236, 227, 227);
+  border: none;
+  cursor: pointer;
+  top: 20px;
+  /* right: 20px; */
+  z-index: 3;
+  /* position: relative; /*parent*/
+}
+
+.poland-age {
+  font-size: 1.5rem;
+  /* width: 463 px; */
+  width: 100vh;
+  /* margin-bottom: 10px; */
+}
+.poland-titre {
+  width: 100vh;
+  /* overflow: hidden; */
+  /* padding-top: 50px; Décale le contenu vers le bas */
+  overflow: hidden;
+  z-index: 2; /*text sur image*/
+  font-size: 3.5rem;
+  color: red;
+  margin: 0;
+}
+.poland-description {
+  font-size: 1rem;
+  width: 500px;
+  padding-bottom: 100px;
+}
+/* .film-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: ev ; */
+/*} */
+/* nav {
+  width: 100%;
+} */
+.films {
+  display: flex; /* Affiche les éléments sur une ligne */
+  justify-content: center; /* Centre les films horizontalement */
+  gap: 20px; /* Espacement entre les films */
+}
+/* .nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px; /* Espace entre les images */
+/*justify-content: space-between; /* Centre les images horizontalement */
+/*align-items: center;
+  overflow: hidden;
+} */
+.film-container {
+  text-align: center; /* Centre le texte sous chaque image */
+  width: 350px; /* Ajuste la largeur pour uniformiser */
+
+  
+}
+.film-image {
+  width: 100%; /* L'image prend toute la largeur du conteneur */
+  height: auto; /* Conserve les proportions de l'image */
+}
+.film-text {
+  margin-top: 10px; /* Espacement entre l'image et le texte */
+  font-size: 14px; /* Taille du texte */
+  color: #f0e4e4; /* Couleur du texte */
+}
+
+@media (max-width: 768px) {
+  .images-row {
+    flex-wrap: wrap; /* Les images passent à la ligne */
+    justify-content: center; /* Centre sur les petits écrans */
+  }
+
+  .image-item {
+    width: 80px; /* Réduit la taille des images */
+    height: 80px;
+  }
 }

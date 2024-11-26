@@ -1,4 +1,4 @@
-import "../assets/Hero.css";
+import "../assets/HeroA.css";
 
 import narcos from "../assets/narcos.jpg";
 import logonarcos from "../assets/logonarcos.svg";

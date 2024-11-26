@@ -18,7 +18,7 @@ function Footer(props) {
       <div className="textes">
         <ul>
           {/* apres je passe les colonnes menus footer sous forme de props */}
-          {/* menu1 est une prop passée au composant parent (dans ton cas, App). */}
+          {/* menu1 est une prop passée au composant parent ( App). */}
           {/* La méthode .map() est utilisée pour parcourir chaque élément du tableau menu1. */}
           {/* Elle prend une fonction en argument et retourne un nouveau tableau en fonction de ce que fait cette fonction. */}
           {/* element : représente la valeur de l'élément actuel dans menu1 */}
