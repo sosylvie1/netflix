@@ -18,13 +18,7 @@ import r2image4 from "./assets/r2image4.svg";
 import r2image5 from "./assets/r2image5.svg";
 import r2image6 from "./assets/r2image6.svg";
 import r2image7 from "./assets/r2image7.svg";
-import bgpoland from "./assets/bgpoland.svg";
-import xclose from "./assets/xclose.svg";
-import Ida from "./assets/Ida.svg";
-import kanal from "./assets/kanal.svg";
-import couteau from "./assets/couteau.svg";
-import vie from "./assets/vie.svg";
-import war from "./assets/war.svg";
+
 
 function App() {
   // je créée des variables menu sous forme de tableau parceque sur mon site ul et li

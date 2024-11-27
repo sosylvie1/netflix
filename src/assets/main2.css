@@ -1,7 +1,8 @@
 body {
-  margin: 0;
+  /* margin: 0; */
   /* font-size: 10px; */
   background-color: #141414;
+  color: white;
 }
 /* Images row 1 et row 2 */
 
@@ -39,115 +40,114 @@ body {
   height: auto;
   padding-top: 65px;
 }
+/*POLONAIS*/
 
-/* section poland */
+.details {
+  position: relative;
+   
+}
 
-/* conteneur principal poland */
-.poland {
+.details__bg {
   width: 100%;
-  height: 658 px;
-  color: white;
-  /* padding-top: 150px; Décale le contenu vers le bas */
-  overflow: hidden;
-  /* display: flex;
-  justify-content: center;*/
-  margin: 0 auto;
-}
-
-.bg {
-  width: 462px;
-  display: flex;
-  justify-content: center;
-  z-index: 1;
-}
-
-image .poland-back {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-/* CONTAINER BOUTON */
-
-.poland-top {
-  display: flex;
-  justify-content: flex-end;
-  z-index: 2;
-}
-
-.close-button {
-  /* margin-top: -100px; */
-  font-size: 1.5rem;
-  background: none;
-  color: rgb(236, 227, 227);
-  border: none;
-  cursor: pointer;
-  top: 20px;
-  /* right: 20px; */
-  z-index: 3;
-  /* position: relative; /*parent*/
-}
-
-.poland-age {
-  font-size: 1.5rem;
-  /* width: 463 px; */
-  width: 100vh;
-  /* margin-bottom: 10px; */
-}
-.poland-titre {
-  width: 100vh;
-  /* overflow: hidden; */
-  /* padding-top: 50px; Décale le contenu vers le bas */
-  overflow: hidden;
-  z-index: 2; /*text sur image*/
-  font-size: 3.5rem;
-  color: red;
-  margin: 0;
-}
-.poland-description {
-  font-size: 1rem;
-  width: 500px;
-  padding-bottom: 100px;
-}
-/* .film-container {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: ev ; */
-/*} */
-/* nav {
-  width: 100%;
-} */
-.films {
-  display: flex; /* Affiche les éléments sur une ligne */
-  justify-content: center; /* Centre les films horizontalement */
-  gap: 20px; /* Espacement entre les films */
-}
-/* .nav {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  gap: 15px; /* Espace entre les images */
-/*justify-content: space-between; /* Centre les images horizontalement */
-/*align-items: center;
-  overflow: hidden;
-} */
-.film-container {
-  text-align: center; /* Centre le texte sous chaque image */
-  width: 350px; /* Ajuste la largeur pour uniformiser */
-
+  position: absolute;
+  z-index: 0;
   
 }
-.film-image {
-  width: 100%; /* L'image prend toute la largeur du conteneur */
-  height: auto; /* Conserve les proportions de l'image */
+
+
+.details__content {
+  position:relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 67px;
+  padding-left: 10px;
+  
+
 }
+
+
+.details__title {
+  margin-top: 34px;
+}
+
+.details__description {
+  max-width: 580px;
+}
+/*FILMS*/
+
+.scrollable {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+.film-Ftext {
+  border-bottom: 5px rgb(231, 17, 17) solid;
+}
+
 .film-text {
-  margin-top: 10px; /* Espacement entre l'image et le texte */
-  font-size: 14px; /* Taille du texte */
-  color: #f0e4e4; /* Couleur du texte */
+  color: rgb(232, 219, 219);
+}
+.titres a {
+  white-space: nowrap;
+  transition: all ease 0.25s;
+}
+
+.titres a:hover {
+  border-bottom: 2px solid red;
+  cursor: pointer;
+}
+
+.titres .scrollable {
+  gap: 76px;
+}
+
+/*FILMS 2 MARSEILLE*/
+.originaux h3 {
+  text-transform: uppercase;
+}
+.fleche {
+  height: 13px;
+  margin-left: 35px;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 20px;
+  height: 124px;
+  width: 204px;
+}
+
+.category:nth-child(odd) {
+  transition: all ease 0.25s;
+}
+
+.category:hover {
+  margin-top: 2rem;
+}
+
+.category:nth-child(1),
+.category:nth-child(4n + 1) {
+  background: linear-gradient(#fd5183, #f04275);
+}
+
+.category:nth-child(2),
+.category:nth-child(4n + 2) {
+  background: linear-gradient(#ffc852, #eeb843);
+}
+
+.category:nth-child(3),
+.category:nth-child(4n + 3) {
+  background: linear-gradient(#81a7fc, #6e96ef);
+}
+
+.category:nth-child(4),
+.category:nth-child(4n + 4) {
+  background: linear-gradient(#bf64ff, #ab50eb);
 }
 
 @media (max-width: 768px) {

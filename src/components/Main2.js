@@ -22,6 +22,17 @@ import kanal from "../assets/kanal.svg";
 import couteau from "../assets/couteau.svg";
 import vie from "../assets/vie.svg";
 import war from "../assets/war.svg";
+import marseille from "../assets/marseille.svg";
+import poriginaux from "../assets/poriginaux.svg";
+import stranger from "../assets/stranger.svg";
+import cuba from "../assets/cuba.svg";
+import fleche from "../assets/fleche.svg";
+import alieniste from "../assets/alieniste.svg";
+import secret from "../assets/secret.svg";
+import soupcons from "../assets/soupcons.svg";
+import caretdown from "../assets/caretdown.svg";
+import age from "../assets/age.svg";
+import polonais from "../assets/Polonais.svg";
 
 // creation de ma variable row1
 const row1 = [
@@ -79,57 +90,121 @@ function Main2(props) {
         className="poland"
         style={{ backgroundImage: "url(" + bgpoland + ")" }}
       > */}
-      */
-      <div
-        className="poland"
-        style={{
-          backgroundImage: `url(${bgpoland})`,
-          backgroundRepeat: "no-repeat",
-          // backgroundSize: "cover", // Pour ajuster l'image à la taille du conteneur
-          // backgroundPosition: "center", // Centre l'image dans le conteneur
-        }}
-      >
-        <div className="poland-top">
-          {" "}
-          {/* Bouton de fermeture */}
-          <button className="close-button">✖</button>
-        </div>
 
-        <div className="poland-content">
-          <span className="poland-age"> L'ÀGE D'OR DU CINÉMA</span>
-          <h1 className="poland-titre">POLONAIS</h1>
-          <p className="poland-description">
+      {/* Section detailspoland  */}
+
+      <section className="details">
+        {/* Image d'arrière-plan */}
+        <img src={bgpoland} className="details__bg" />
+
+        {/* Contenu superposé */}
+        <div className="details__content">
+          <img src={age} height="38" />
+          <img className="details__title" src={polonais} height="61" />
+          <h3>Netflix Découverte - Juillet 2018</h3>
+          <p className="details__description">
             Andrzej Wajda, Roman Polański, Agnieszka Holland, Paweł Pawlikowski…
             Découvrez ceux qui ont fait connaitre le cinéma polonais sur la
             scène internationale.
           </p>
+        </div>
+      </section>
 
+      {/* Section films  */}
+      <section className="films">
+        <div className="scrollable">
+          <img src={Ida} alt="Ida" />
+          <img src={vie} alt="vie" />
+          <img src={war} alt="war" />
+          <img src={couteau} alt="couteau" />
+        </div>
+      </section>
+      {/* <div class="caroussel">
           <div className="films">
-            
-            <div className="film-container">
-              <img src={Ida} alt="Film Ida" className="film-image" />
-              <p className="film-text">
-                L'âge d'or du cinéma polonais (juillet 2018)
-              </p>
-            </div>
-            <div className="film-container">
-              <img src={vie} alt="Film Vie" className="film-image" />
-              <p className="film-text">
-                La nouvelle vague française (juin 2018)
-              </p>
-            </div>
-            <div className="film-container">
-              <img src={war} alt="Film Cold War" className="film-image" />
-              <p className="film-text">Direction Cannes (mai 2018)</p>
-            </div>
-            <div className="film-container">
-              <img src={couteau} alt="Film Couteau" className="film-image" />
-              <p className="film-text">Bollywood Classiques (mai 2018)</p>
-            </div>
+            <img src={Ida} alt="Film Ida" className="film-image" />
+            <img src={vie} alt="Film Vie" className="film-image" />
+            <img src={war} alt="Film Cold War" className="film-image" />
+            <img src={couteau} alt="Film Couteau" className="film-image" />
+          </div> */}
+      {/* <div class="textes">
+            <span className="film-Ftext">
+              L'âge d'or du cinéma polonais (juillet 2018)
+            </span>
+            <span className="film-text">
+              La nouvelle vague française (juin 2018)
+            </span>
+            <span className="film-text">Direction Cannes (mai 2018)</span>
+            <span className="film-text">Bollywood Classiques (mai 2018)</span>
+          </div> */}
+      <section className="titres">
+        <div className="scrollable">
+          <a>L’âge d’or du cinéma polonais (juillet 2018)</a>
+          <a>La nouvelle vague française (juin 2018)</a>
+          <a>Direction Cannes (mai 2018)</a>
+          <a>Bollywood Classiques (mai 2018)</a>
+          <a>L’âge d’or du cinéma polonais (juillet 2018)</a>
+          <a>La nouvelle vague française (juin 2018)</a>
+          <a>Direction Cannes (mai 2018)</a>
+          <a>Bollywood Classiques (mai 2018)</a>
+        </div>
+      </section>
+      {/* Section programmes originaux  */}
+      <section className="originaux">
+        <h3>
+          Programmes originaux Netflix
+          <img src={fleche} class="fleche" />
+        </h3>
+
+        <div className="scrollable">
+          <img src={marseille} alt="marseille" />
+          <img src={secret} alt="secret" />
+          <img src={stranger} alt="stranger" />
+          <img src={cuba} alt="cuba" />
+          <img src={alieniste} alt="alieniste" />
+          <img src={soupcons} alt="soupcons" />
+        </div>
+      </section>
+
+      {/* Section Catégories */}
+      <section class="categories">
+        <h3>Catégories</h3>
+        <div class="scrollable">
+          <div class="category">
+            Comédie <img src={caretdown} />
+          </div>
+          <div class="category">
+            Action <img src={caretdown} />{" "}
+          </div>
+          <div class="category">
+            Drame <img src={caretdown} />
+          </div>
+          <div class="category">
+            Sci-Fi <img src={caretdown} />
+          </div>
+          <div class="category">
+            Romance <img src={caretdown} />
+          </div>
+          <div class="category">
+            Thriller <img src={caretdown} />
+          </div>
+          <div class="category">
+            Émissions <img src={caretdown} />
+          </div>
+          <div class="category">
+            Horreur <img src={caretdown} />
+          </div>
+          <div class="category">
+            Enfants <img src={caretdown} />
+          </div>
+          <div class="category">
+            Documentaire <img src={caretdown} />
           </div>
         </div>
-      </div>
+      </section>
     </div>
+    // </div>
+    // </div>
+    // </div>
   );
 }
 
