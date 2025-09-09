@@ -1,9 +1,7 @@
-import Navbar from "./components/Navbar";
+import Navbars from "./components/Navbars";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Main2 from "./components/Main2";
-import narcos from "./assets/narcos.jpg";
-import cards1 from "./assets/cards1.svg";
 import image1 from "./assets/image1.svg";
 import image2 from "./assets/image2.svg";
 import image3 from "./assets/image3.svg";
@@ -18,7 +16,6 @@ import r2image4 from "./assets/r2image4.svg";
 import r2image5 from "./assets/r2image5.svg";
 import r2image6 from "./assets/r2image6.svg";
 import r2image7 from "./assets/r2image7.svg";
-
 
 function App() {
   // je créée des variables menu sous forme de tableau parceque sur mon site ul et li
@@ -59,10 +56,10 @@ function App() {
     { src: r2image4, alt: "Row 2 - Image 4 (duplicate)" },
   ];
 
-  //  A FAIRE CONST IMAGE IDEM QUE CI DESSUS ET FAIRE PROPS SUR MAINS SECTION 2 ET RAPPELLE LA VARIABLE DANS MAIN2
+  //  A FAIRE CONST IMAGE IDEM QUE CI DESSUS ET FAIRE PROPS SUR fichier MAIN SECTION 2 ET RAPPELLE LA VARIABLE DANS MAIN2
   return (
     <div className="App">
-      <Navbar />
+      <Navbars />
       <Hero />
       <Main2
         titre="Revoir"

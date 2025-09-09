@@ -4,6 +4,9 @@ header {
   justify-content: space-between;
   background-color: #141414;
   padding: 18px 60px;
+  
+  
+
 }
 
 .header__left {
@@ -50,5 +53,74 @@ nav,
 
   .avatar__dropdown {
     height: 6px;
+  }
+}
+
+
+.sidebar {
+  position: fixed;
+  /* top: 0; */
+  right: -100%; /* Par défaut, hors de l'écran */
+  height: 100%;
+  width: 250px;
+  background-color: #141414;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacement entre les liens */
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 999;
+  border: 2px solid #f5f5f1;
+}
+
+.sidebar.active {
+  right: 0; /* Fait apparaître la sidebar */
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.deco {
+
+  padding-top: 15px;
+  border-top: 1px solid whitesmoke;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(51, 48, 48, 0.5); /* Semi-transparent noir */
+  z-index: 998; /* Sous la sidebar */
+}
+
+/* responsive pour mobile */
+@media screen and (max-width: 1200px) {
+  nav,
+  .header__right {
+    display: none; /* Masque le menu principal */
+  }
+
+  .burger {
+    display: block; /* Affiche le menu burger */
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .burger {
+    display: none; /* ôte le menu burger  */
+  }
+
+  nav,
+  .header__right {
+    display: flex; /* Affiche le menu principal */
+   
   }
 }

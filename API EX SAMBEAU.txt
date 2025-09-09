@@ -1,0 +1,61 @@
+import supTitle from "../assets/images/netflix_original.svg";
+EXEMPLE SAMBEAU CODE REACT ET API
+
+import title from "../assets/images/logo-narcos.svg";
+import play from "../assets/images/play.png";
+import plus from "../assets/images/plus.png";
+
+import "../components/Hero.css";
+import data from "./data.json";
+
+import { useState } from "react";
+
+function Hero() {
+  // const dataHero = data[0];
+
+  const [dataHero, setDataHero] = useState(null);
+  const [isNetflixOriginal, setIsNetflixOriginal] = useState(false);
+  const [title, setTitle] = useState("");
+  const [catchPhrase, setCatchPhrase] = useState("");
+  const [description, setDescription] = useState("");
+  const [heroBg, setHeroBg] = useState("./images/hero_bg.png");
+
+  fetch("https://jsonplaceholder.typicode.com/photos")
+    .then((response) => response.json())
+    .then((data) => {
+      setIsNetflixOriginal(true);
+      setTitle(data[0].title);
+      setCatchPhrase(data[0].title);
+      setDescription(data[0].title);
+      setHeroBg(data[0].thumbnailUrl);
+    });
+  return (
+    <section className="hero">
+      <img className="hero__bg" src={heroBg} />
+      <div className="hero__content">
+        <div className="hero__titles">
+          {isNetflixOriginal && (
+            <h4 className="hero__suptitle">Netflix Original</h4>
+          )}
+          <h3 className="hero__title">{title}</h3>
+        </div>
+        <div className="hero__text">
+          <h2>{catchPhrase}</h2>
+          <p>{description}</p>
+        </div>
+        <div className="hero__ctas">
+          <a href="">
+            <img src={play} />
+            Lecture
+          </a>
+          <a href="">
+            <img src={plus} />
+            My List
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Hero;

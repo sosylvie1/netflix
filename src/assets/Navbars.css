@@ -1,0 +1,144 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg);
+  padding: 18px 60px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.logo {
+  height: 34px;
+}
+
+.header__right {
+  display: none;
+}
+
+.burger__icon {
+  height: 30px;
+}
+
+.dropdown__container {
+  position: relative;
+}
+
+.dropdown__menu {
+  display: none;
+  position: absolute;
+  right: 50%;
+  top: 1rem;
+}
+
+.dropdown__menu a {
+  font-weight: 700;
+}
+
+.dropdown__container .dropdown__caret {
+  position: absolute;
+  top: 10px;
+  height: 7px !important;
+  transform: rotate(180deg);
+}
+
+.dropdown__menu div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.dropdown__menu.active {
+  display: grid;
+  gap: 8px;
+  width: 200px;
+  padding: 16px 8px;
+  background-color: #181616;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  text-decoration: none;
+  color: white
+}
+.lien {
+  text-decoration: none;
+  color:white;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 40vw;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  background-color: #000;
+  transition: right 0.25s ease;
+  z-index: 998;
+ 
+}
+
+nav.open {
+  right: 0;
+ 
+}
+
+.burger {
+  z-index: 999;
+ 
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 997;
+}
+
+.overlay.open {
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .burger {
+    display: none;
+  }
+
+  nav,
+  .header__right {
+    text-decoration: none;
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--white);
+    z-index: 998;
+    
+  }
+
+  .header__right img:not(.avatar__dropdown) {
+    height: 30px;
+  }
+
+  .avatar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .avatar__dropdown {
+    height: 6px;
+  }
+}
